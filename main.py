@@ -6,7 +6,9 @@ from pymongo.server_api import ServerApi
 
 # Load and get envs at module level for all functions once
 load_dotenv()
-mongodb_uri = os.environ.get("MONGODB_URI", "undefined")
+mongodb_uri = os.environ.get("MONGODB_URI")
+if not mongodb_uri:
+    raise ValueError("Environment variable 'MONGODB_URI' is not set. Please configure it before running the application.")
 
 # Set up MongoDB connection at module level for all functions once
 client = MongoClient(
