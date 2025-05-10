@@ -1,0 +1,10 @@
+[project]
+name = "learning-pymongo"
+version = "0.1.0"
+description = "Micro project following the tutorial of the MongoDB Python SDK."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pymongo>=4.12.1",
+    "python-dotenv>=1.1.0",
+]
