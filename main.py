@@ -23,10 +23,10 @@ def pin_mongodb_server():
     except Exception as e:
         print(e)
 
+# TODO: implement query tool iteratively - how to get collection schema?
+
 def main():
     
-    # print("Hello from learning-pymongo!")
-    # print(f'MongoDB URI: {mongodb_uri}')
     pin_mongodb_server()
 
 
